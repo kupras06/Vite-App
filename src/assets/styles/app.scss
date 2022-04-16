@@ -1,0 +1,40 @@
+$bgColor: #cacbec;
+$primary: #141691;
+body {
+  background-color: $bgColor !important;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.onboarding-container {
+  margin: 20px 15%;
+  background: #f6f6f6;
+  padding: 1em;
+  border-radius: 8px;
+  @media (max-width: 450px) {
+    margin: auto 10px;
+  }
+}
+.error-message {
+  margin-left: 10px;
+  font-family: Roboto;
+  font-size: 13px;
+  line-height: 14px;
+  font-weight: 500;
+  color: red;
+  text-transform: capitalize;
+}
+.blur-bg {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-self: center;
+  height: 100%;
+}
+.blur-bg::before {
+  content: "";
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
